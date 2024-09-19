@@ -44,6 +44,7 @@ export default defineNuxtConfig({
         "nuxt-lazy-hydrate",
         "nuxt-schema-org",
         "@nuxt/icon",
+        '@nuxtjs/tailwindcss'
     ],
     app: {
         head: {
