@@ -83,7 +83,7 @@ const VueRecaptcha = defineAsyncComponent({
 });
 
 const api = useApi();
-
+const config = useRuntimeConfig();
 const form = reactive({
     full_name: '',
     phone: '',
@@ -151,10 +151,7 @@ const submit = async () => {
     }
 };
 
-
-
-
-const sitekey = "6Leg04gpAAAAAJvzhxc0KaQU-KvKrnWFWx3u9Gi7";
+const sitekey = config.public.siteKey;
 
 onMounted(() => {
     // Any mounted logic
