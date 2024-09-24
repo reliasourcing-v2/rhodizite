@@ -35,16 +35,3 @@ defineProps({
     },
 })
 </script>
-
-<style lang="scss" scoped>
-.team-card {
-    display: inline-block;
-    width: 30.33%;
-    margin-right: 4.5%;
-    margin-bottom: 80px;
-    text-align: left;
-    &:nth-child(3n) {
-        margin-right: 0;
-    }
-}
-</style>
