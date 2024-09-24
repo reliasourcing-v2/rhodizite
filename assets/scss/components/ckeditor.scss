@@ -536,6 +536,14 @@ margin-left: -15px;
     border-radius: 0;
 }
 
+.ck-content { font-size: 1rem; }
+.ck-content h1 { font-size: 2rem; }
+.ck-content h2 { font-size: 1.875rem; }
+.ck-content h3 { font-size: 1.5rem; }
+.ck-content h4 { font-size: 1.25rem; }
+.ck-content h5 { font-size: 1.125rem; }
+.ck-content h6 { font-size: 1rem; }
+
 @media print {
     /* @ckeditor/ckeditor5-page-break/theme/pagebreak.css */
     .ck-content .page-break {
