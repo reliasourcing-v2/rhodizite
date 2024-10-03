@@ -41,6 +41,7 @@
                 </div>
                 <div class="space-y-3">
                     <p class="font-bold text-base">Others</p>
+                    <div><nuxt-link class="hover:text-primary-600 transition" to="/resources">Resources</nuxt-link></div>
                     <div><nuxt-link class="hover:text-primary-600 transition" to="/pages/about-us/our-advantages">About Us</nuxt-link></div>
                     <div><nuxt-link class="hover:text-primary-600 transition" to="/careers">Careers</nuxt-link></div>
                     <div><nuxt-link class="hover:text-primary-600 transition" to="/contact-us">Contact Us</nuxt-link></div>
