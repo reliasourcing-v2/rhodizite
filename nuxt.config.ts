@@ -44,8 +44,17 @@ export default defineNuxtConfig({
         "nuxt-lazy-hydrate",
         "nuxt-schema-org",
         "@nuxt/icon",
-        '@nuxtjs/tailwindcss'
+        '@nuxtjs/tailwindcss',
+        "@nuxtjs/sitemap",
     ],
+    sitemap: {
+        hostname: `${process.env.NUXT_PUBLIC_SITE_URL}`,
+        sources: [`${process.env.API_BASE_URL}/sitemap`],
+        xslColumns: [
+            { label: 'URL', width: '75%' },
+            { label: 'Last Modified', select: 'sitemap:lastmod', width: '25%' },
+          ],
+    },
     app: {
         head: {
             htmlAttrs: {
