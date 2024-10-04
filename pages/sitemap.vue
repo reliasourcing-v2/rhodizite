@@ -81,6 +81,27 @@
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <h2 class="text-xl lg:text-2xl font-bold mb-4">
+                        <NuxtLink to="/careers" class="hover:text-primary-500">
+                            Careers
+                        </NuxtLink>
+                    </h2>
+                </li>
+                <li>
+                    <h2 class="text-xl lg:text-2xl font-bold mb-4">
+                        <NuxtLink to="/calculator" class="hover:text-primary-500">
+                            Calculator
+                        </NuxtLink>
+                    </h2>
+                </li>
+                <li>
+                    <h2 class="text-xl lg:text-2xl font-bold mb-4">
+                        <NuxtLink to="/contact-us" class="hover:text-primary-500">
+                            Contact Us
+                        </NuxtLink>
+                    </h2>
+                </li>
             </ul>
         </div>
     </div>
