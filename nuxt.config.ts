@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
     devServer: {
         port: 8000
-      },    
+    },    
     compatibilityDate: "2024-04-03",
     runtimeConfig: {
         public: {
@@ -44,8 +44,17 @@ export default defineNuxtConfig({
         "nuxt-lazy-hydrate",
         "nuxt-schema-org",
         "@nuxt/icon",
-        '@nuxtjs/tailwindcss'
+        '@nuxtjs/tailwindcss',
+        "@nuxtjs/sitemap",
     ],
+    sitemap: {
+        hostname: `${process.env.NUXT_PUBLIC_SITE_URL}`,
+        sources: [`${process.env.API_BASE_URL}/sitemap`],
+        xslColumns: [
+            { label: 'URL', width: '75%' },
+            { label: 'Last Modified', select: 'sitemap:lastmod', width: '25%' },
+          ],
+    },
     app: {
         head: {
             htmlAttrs: {
@@ -55,7 +64,9 @@ export default defineNuxtConfig({
         },
     },
     image: {
-        format: ['webp']
+        format: ['webp'],
+        // This is very important - this will allow all images coming from the api endpoint automatically convert to webp.
+        domains: ['staging-back.reliasourcing.com']
     },
     googleFonts: {
         // declare your google fonts here
