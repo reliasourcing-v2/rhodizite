@@ -70,8 +70,8 @@ export default defineNuxtConfig({
         text: `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,—-.:?_<>/€`,
     },
     gtag: {
-        id: "G-XXXXXXXXXX",
-        enabled: false,
+        id: "G-KQGEMJVTC6",
+        enabled: process.env.NODE_ENV === 'production',
     },
     imports: {
         dirs: ["composables/**"],
