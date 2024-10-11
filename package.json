@@ -27,7 +27,7 @@
     "gsap": "^3.12.5",
     "lightgallery": "^2.7.2",
     "nuxt": "^3.12.3",
-    "nuxt-gtag": "^2.0.7",
+    "nuxt-gtag": "^3.0.1",
     "nuxt-lazy-hydrate": "^1.0.0",
     "nuxt-schema-org": "^3.3.8",
     "pdfmake": "^0.2.10",
