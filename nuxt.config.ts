@@ -82,7 +82,7 @@ export default defineNuxtConfig({
     },
     gtag: {
         id: "G-KQGEMJVTC6",
-        enabled: process.env.NODE_ENV === 'production',
+        enabled: process.env.NODE_ENV === 'production' ? true : false,
     },
     imports: {
         dirs: ["composables/**"],
