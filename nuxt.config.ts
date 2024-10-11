@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devServer: {
-        port: 8000
+        port: 8002
     },    
     compatibilityDate: "2024-04-03",
     runtimeConfig: {
@@ -81,8 +81,18 @@ export default defineNuxtConfig({
         text: `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,—-.:?_<>/€`,
     },
     gtag: {
-        id: "G-KQGEMJVTC6",
-        enabled: process.env.NODE_ENV === 'production' ? true : false,
+        id: process.env.NUXT_PUBLIC_GTAG_ID,
+        enabled: true,
+        // initCommands: [
+        //     // Setup up consent mode
+        //     ['consent', 'default', {
+        //       ad_user_data: 'denied',
+        //       ad_personalization: 'denied',
+        //       ad_storage: 'denied',
+        //       analytics_storage: 'denied',
+        //       wait_for_update: 500,
+        //     }]
+        //   ]        
     },
     imports: {
         dirs: ["composables/**"],
